@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:open_peeps/open_peeps.dart';
+// import 'package:open_peeps/open_peeps.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({
@@ -55,14 +55,14 @@ class HomeAppBar extends StatelessWidget {
             ),
           ],
         ),
-        CircleAvatar(
-          radius: 20.0,
-          // backgroundImage: AssetImage(ImageConst.transparentCat),
-          child: PeepAvatar.fromPeep(
-            size: 50,
-            peep: PeepGenerator().generate(),
-          ),
-        ),
+        // CircleAvatar(
+        //   radius: 20.0,
+        //   // backgroundImage: AssetImage(ImageConst.transparentCat),
+        //   child: PeepAvatar.fromPeep(
+        //     size: 50,
+        //     peep: PeepGenerator().generate(),
+        //   ),
+        // ),
       ],
     );
   }

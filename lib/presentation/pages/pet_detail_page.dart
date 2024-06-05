@@ -114,8 +114,8 @@ class _PetDetailScreenState extends State<PetDetailScreen> {
     AwesomeDialog(
       dismissOnTouchOutside: false,
       context: context,
-      dialogType: DialogType.SUCCES,
-      animType: AnimType.SCALE,
+      dialogType: DialogType.success,
+      animType: AnimType.scale,
       title: 'Adoption Done',
       desc: 'You\'ve now adopted ${pet.name}',
       btnOkOnPress: () {

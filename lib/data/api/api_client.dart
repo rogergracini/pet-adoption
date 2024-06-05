@@ -6,8 +6,10 @@ class ApiClient {
   ApiClient() : _dio = Dio() {
     // Set any common configurations for your API client
     _dio.options.baseUrl = 'https://api.example.com';
-    _dio.options.connectTimeout = 5000; // 5 seconds
-    _dio.options.receiveTimeout = 3000; // 3 seconds
+    // _dio.options.connectTimeout = 5000; // 5 seconds
+    // _dio.options.receiveTimeout = 3000; // 3 seconds
+    _dio.options.connectTimeout = const Duration(seconds: 5); // 5 seconds
+    _dio.options.receiveTimeout = const Duration(seconds: 5); // 3 seconds
   }
 
   Future<String> get(String path, {Map<String, String>? headers}) async {
